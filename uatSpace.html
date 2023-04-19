@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+
+<!-- this is the UAT Space page in Intro to prgramming CSC102.  
+
+    This bootiful creation was made in spring 2023 ong! 
+
+    
+
+    created by: 
+
+    melanie owens 
+
+    melowens@uat.edu 
+
+    and this is my autograph 
+
+-->
+
+<html>
+
+
+<head>
+    <!-- this is the head and this is where all the behind the scenes goes.  
+balls -->
+
+    <title> Mel's UAT Space Page </title>
+    <script src="code.js"> </script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <img src="UATspaceLogo-1.jpg">
+    <h1 style="color:rebeccapurple;">
+        Welcome to the UAT Space Page
+    </h1>
+    <br> 
+    <table id= "data" border="2" width="70%" style="color: white;">
+        <col style="width: 35%">
+        <col style="width: 35%">
+        <thead> 
+            <th> Data Type </th> 
+            <th> Reading </th> 
+        </thead> 
+      <tr> 
+            <td> Time Elapsed </td> 
+            <td> 15 seconds </td> 
+      </tr> 
+      <tr id="latitude">
+            <td> Latitude </td>
+            <td> 0 </td>
+      </tr>
+      <tr id="longitude"> 
+            <td> Longitude </td> 
+            <td> 0 </td> 
+      </tr> 
+      <tr id="gps_alitiude"> 
+            <td> GPS Alitiude </td> 
+            <td> 30383.04</td> 
+      </tr> 
+      <tr id="bmp_altitude">
+            <td> BMP Sensor Altitude </td> 
+            <td> 2.34 </td> 
+      </tr> 
+      <tr id="bmp_pressure">
+            <td> BMP Sensor Pressure </td>
+            <td> 2.34 </td>
+      <tr>
+      </tr id="bmp_temp">  
+            <td> BMP Sensor Temperature </td>
+            <td> 0 </td>
+      </tr> 
+      <tr id="digital_temp"> 
+            <td> Digital Sensor Temperature </td> 
+            <td> 24.12 </td>  
+      </tr>  
+      <tr id="css_temp"> 
+            <td> CSS Sensor Temoerature </td> 
+            <td> 25 </td>  
+      </tr> 
+      <tr id="css_eCO2">  
+            <td> CSS Sensor eCO2 </td>  
+            <td> 400 </td>  
+      </tr>  
+      <tr id="css_TVOV"> 
+            <td> CSS Sensor TVOV </td>  
+            <td> 0 </td>  
+      </tr>  
+      <tr id="uv"> 
+            <td> UV </td> 
+            <td> 0 </td>  
+      </tr> 
+      <tr id="accel_x"> 
+            <td> Accel X </td> 
+            <td> -0.87 </td>  
+      </tr>  
+      <tr id="accel_v"> 
+            <td> Accel V </td>  
+            <td> -0.02 </td>  
+      </tr>  
+      <tr id="accel_z"> 
+            <td> Accel Z </td>  
+            <td> 9.61 </td>  
+      </tr>  
+      <tr id="mag_x">  
+            <td> Magnetic X </td> 
+            <td> 4.66 </td>  
+      </tr>  
+      <tr id="mag_z">  
+            <td> Magnetic Z </td> 
+            <td> -0.4 </td>  
+      </tr>  
+      <tr id="gyro_x">  
+            <td> Gyro X </td>  
+            <td> -0.87 </td>  
+      </tr>  
+      <tr id="gyro_z">  
+            <td> Gyro Z </td>  
+            <td> 9.61 </td>  
+      </tr>  
+  </table> 
+  <br>  
+  <br> 
+  <br> 
+  <button class="button" id="startButton" onclick="startFun();"> Start</button>
+  <button class="button" id="stopButton" onclick="stoptFun();"> Stop</button>
+  <br>
+  <br>
+
+  <!--  <p>
+       I dunked on lebron james when I was 4 and got absolutley no credit for it what so ever. <br>
+       This is also a paragraph tag and it can be more than one line depending on the amount of text or the window fr
+    </p> -->
+
+    <script>
+        //alert("you can officially break bread shawty, congrats"); 
+        // remember this is how you run an alert and this is also how you make a comment in java script fool  
+       // document.write("This is a document.write function as welllll, we really making progress here, look at you");
+    </script>
+    <br>
+    <br>
+    <h2> Blastoff Timer </h2>
+    <div id="blastoffDis"> Start the bugatti to start the blastoff timer </div>
+    <br>
+    <br>
+    <br>
+    <button onclick="btrBlastoffTimer();">Start the bugatti</button>
+    <button> stop the bugatti </button>
+    <br>
+    <br>
+    <h2> Craps game </h2>
+    <div id="die1Res"> Die 1 Result</div><br>
+    <div id="die2Res"> Die 2 Result</div><br>
+    <div id="diceSum"> Sum of Die 1 and Die 2</div><br>
+    <div id="gameRes"> Game Result</div><br>
+    <button onclick="playCraps()">Play Craps!</button><br>
+    <br>
+    wins<br>
+    <div id="winsRes">0</div><br>
+    loses<br>
+    <div id="losesRes">0</div><br>
+    draws <br>
+    <div id="drawsRes">0</div><br>
+    <br>
+    <h2>Sandbox</h2>
+    <br>
+    <div id="sandboxText"> Text to play with</div>
+    <script>
+        var phunText1 = "This is my ";
+        var phunText2 = "phun text.";
+        var i = 6;
+        var j = 7;
+        var exp = 6 ** 2;
+        exp--;
+        evenTest = exp % 2;
+        document.getElementById("sandboxText").innerHTML = evenTest;
+
+    </script>
+
+</body>
+
+
+</html>
